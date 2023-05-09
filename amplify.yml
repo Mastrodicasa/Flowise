@@ -3,10 +3,12 @@ frontend:
   phases:
     preBuild:
       commands:
-        - 
+        - npm i -g yarn
     build:
       commands:
-        - yarn; yarn install; yarn build;
+        - cd Flowise
+        - yarn install
+        - yarn build
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: /
